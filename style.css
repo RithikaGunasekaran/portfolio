@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Serif', serif;}
+.nav-container{
+        padding: 10px 10%;
+        background-color: #0B2447; 
+    }
+.nav-container a.active{
+    color: #0B2447;
+    background-color: #8d8d8d;
+    border-radius: 5px;
+    padding: 5px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 45%;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+.top-container{
+    background: linear-gradient(95deg, rgba(44, 44, 88, 0.8), rgba(0, 0, 0, 0.2) );
+    background-color: #0B2447 ;
+    
+    height: 230px;
+    font-size: 25px;
+    color: white;
+   padding-top: 50px;
+   padding-left: 40px;
+}
+
+.middle-container{
+    background-color: #19376D;
+    height: 300px;
+    color: aliceblue;
+   background-position: center;
+}
+.middle-container .box{
+    background: linear-gradient(45deg, rgba(17, 17, 17, 0.8), rgba(0, 0, 0, 0.1) );
+
+    height: 230px;
+    width: 600px;
+    margin: 10px;
+    margin-right: 150px;
+    border-radius: 10px;
+   /* background: #1f1d30;*/
+    opacity: 70%;
+    float: right;
+    padding: 1em;
+}
+.middle-container .box h3{
+    font-size: 40px;
+   padding-bottom: 10px;
+    float: left;
+    
+}
+.middle-container .box p{
+    position: relative;
+    float: right;
+     font-size: 25px;
+   text-align: justify;
+}
+.skill{
+       
+    background: linear-gradient(200deg, rgba(8, 10, 18, 0.5), rgba(0, 0, 0, 0.2) 50%);
+   background-color: #526d82;
+    color: aliceblue;
+    text-align: center;
+    height: 200px;
+}
+.skill h3{
+    color: aliceblue;
+    font-size: 40px;
+    display: block;
+    padding-top: 10px;
+    padding-left: 1em;
+    text-align: center;
+    
+}
+.skill p{
+    font-size: 40px;
+    text-align: center;
+    
+}
+.skill .list{
+    display: block;
+    margin: 0;
+    font-size: 25px;
+    padding-left: 1em;
+}
+.skill .list li{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 20px;
+    list-style-type:circle;
+    text-align: left;
+    white-space: nowrap;
+    margin-right: 1em;
+}
+.bottom-container{
+    background-color: #c0c3c4;   
+     
+    height: 100px;
+}
+.bottom-container p{
+    color: aliceblue;
+    font-size: 25px;
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 10px;
+    
+}
+.bottom-container h3{
+    color: rgb(66, 67, 67);
+    font-size: 25px;
+    display: block;
+    padding-left: 1em;
+    text-align: center;
+}
+@media(max-width: 1250px){
+    .container{
+        flex-direction: column;
+        height: 100%;
+    }}
+.row {
+        background-color: #9DB2BF;   
+     
+       height: 250px;
+      }
+.exp h3{
+        color: rgb(62, 62, 62);
+        font-size: 40px;
+        display: block;
+        padding-left: 1em;
+        text-align: center;
+        background-color: #9DB2BF;   
+
+    }
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+        padding: 6px;
+
+      } /* Create four equal columns that floats next to each other */
+.column {
+        float: left;
+        width: 23.5%;
+      }
+      
+      /* Clear floats after rows */
+.row:after {
+        content: "";
+        display: table;
+        clear: both;
+
+      }
+.content {
+    background: linear-gradient(200deg, rgba(51, 56, 76, 0.8), rgba(255, 255, 255, 0) 90.71%);
+        padding: 20px 30px;
+        height: 200px;
+        color: #212121;
+        margin-left:10px;
+        border-radius: 5px;
+        
+      }
+.bottom-container .logo{
+    padding: 10px;
+    
+    width: 40px;
+    
+}
+.roww{
+    display: flex;
+    padding-left: 45%;
+}
+.bottom-container .roww .column{
+    
+    display: inline-block;
+    
+}
